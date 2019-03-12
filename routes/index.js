@@ -6,4 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+router.post('/assistant', function(req, res) {
+	console.log(req.connection);
+	res.send("got !");
+});
 module.exports = router;
